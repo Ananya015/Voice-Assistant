@@ -48,3 +48,14 @@ if __name__ == '__main__':
     wishMe()
     while True:
          query=takeCommand().lower()
+
+         if 'wikipedia' in query:
+             speak("searching wikipedia...")
+             query=query.replace("wikipedia","")
+             results = wikipedia.summary(query , sentences=3)
+             speak("according to wikipedia")
+             print(results)
+             speak(results)
+
+
+
