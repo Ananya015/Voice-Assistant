@@ -3,6 +3,7 @@ import datetime
 import speech_recognition as sr
 import wikipedia
 import webbrowser
+import os
 
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')
@@ -64,6 +65,16 @@ if __name__ == '__main__':
 
          elif 'open stackoverflow' in query:
                 webbrowser.open("stackoverflow.com")
+
+         elif 'play music' in query:
+             music ="Desktop\\new songs"
+             songs =os.listdir(music)
+             os.startfile(os.path.join(music, songs[0]))
+
+
+
+
+
 
 
 
