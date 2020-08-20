@@ -1,6 +1,8 @@
 import pyttsx3
 import datetime
 import speech_recognition as sr
+import wikipedia
+
 
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')
@@ -43,6 +45,6 @@ def takeCommand():
 
 if __name__ == '__main__':
     # speak("hey ! welcome. This is Ananya")
-
     wishMe()
-    takeCommand()
+    while True:
+         query=takeCommand().lower()
