@@ -36,7 +36,7 @@ def takeCommand():
 
     try:
         print("Recognizing....")
-        query = r.recognize_google(audio, language="en-US")
+        query = r.recognize_google(audio, language="en-in")
         print(f"User said: {query}")
     except Exception as e:
         print("Say again please")
@@ -70,7 +70,9 @@ if __name__ == '__main__':
              music ="Desktop\\new songs"
              songs =os.listdir(music)
              os.startfile(os.path.join(music, songs[0]))
-
+         elif 'the time' in query:
+             strtime=datetime.datetime.now().strftime("%H:%M:%S")
+             speak("time is "+ strtime)
 
 
 
