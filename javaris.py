@@ -19,5 +19,7 @@ def wishMe():
     else:
         speak("Good Evening")
 
+    speak("I am jarvis, please tell me how can I help you")
+
 if __name__ == '__main__':
     speak("hey ! welcome. This is Ananya")
