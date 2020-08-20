@@ -33,7 +33,7 @@ def takeCommand():
 
     try:
         print("Recognizing....")
-        query = r.recognize_google(audio, language='en-in')
+        query = r.recognize_google(audio, language="en-US")
         print(f"User said: {query}")
     except Exception as e:
         print("Say again please")
@@ -42,4 +42,7 @@ def takeCommand():
 
 
 if __name__ == '__main__':
-    speak("hey ! welcome. This is Ananya")
+    # speak("hey ! welcome. This is Ananya")
+
+    wishMe()
+    takeCommand()
