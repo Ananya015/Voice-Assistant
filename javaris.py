@@ -1,8 +1,23 @@
+# voice assistant
+
+##import modules
+
+### convert text-to-speech
 import pyttsx3
+
+###display current time
 import datetime
+
+### recognises speech
 import speech_recognition as sr
+
+###detect wekipidias
 import wikipedia
+
+###display web pages
 import webbrowser
+
+###interact with os
 import os
 
 engine=pyttsx3.init('sapi5')
