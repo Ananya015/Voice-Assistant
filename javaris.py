@@ -67,7 +67,7 @@ if __name__ == '__main__':
                 webbrowser.open("stackoverflow.com")
 
          elif 'play music' in query:
-             music ="Desktop\\new songs"
+             music ="C:\\Users\\vinay kumar jain\\Desktop"
              songs =os.listdir(music)
              os.startfile(os.path.join(music, songs[0]))
          elif 'the time' in query:
