@@ -76,6 +76,10 @@ if __name__ == '__main__':
          elif 'open pycharm' in query:
              pych="C:\\Users\\vinay kumar jain\\AppData\\Local\\JetBrains\\Toolbox\\apps\\PyCharm-C\\ch-0\\202.6397.98\\bin\\pycharm64.exe"
              os.startfile(pych)
+         elif 'stop' in query:
+             speak("Thank you! for giving me a chance for serving you")
+             break
+
 
 
 
