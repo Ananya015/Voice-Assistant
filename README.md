@@ -1,1 +1,3 @@
-# AI-javaris-Voice-Assistant
+# Voice-Assistant
+
+## This is a voice assistant using python
