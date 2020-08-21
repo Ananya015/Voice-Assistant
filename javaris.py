@@ -73,6 +73,9 @@ if __name__ == '__main__':
          elif 'the time' in query:
              strtime=datetime.datetime.now().strftime("%H:%M:%S")
              speak("time is "+ strtime)
+         elif 'open pycharm' in query:
+             pych="C:\\Users\\vinay kumar jain\\AppData\\Local\\JetBrains\\Toolbox\\apps\\PyCharm-C\\ch-0\\202.6397.98\\bin\\pycharm64.exe"
+             os.startfile(pych)
 
 
 
