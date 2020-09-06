@@ -1,8 +1,8 @@
-# voice assistant
+# VOICE ASSISTANT
 
-##import modules
+#importing modules
 
-### convert text-to-speech
+#convert text-to-speech
 import pyttsx3
 
 ###display current time
@@ -31,7 +31,9 @@ def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
+
 def wishMe():
+
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
         speak("Good Morning !")
@@ -62,8 +64,11 @@ def takeCommand():
 if __name__ == '__main__':
     # speak("hey ! welcome. This is Ananya")
     wishMe()
+
+
     while True:
          query=takeCommand().lower()
+
 
          if 'wikipedia' in query:
              speak("searching wikipedia...")
