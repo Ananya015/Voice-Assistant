@@ -1,29 +1,32 @@
 # VOICE ASSISTANT
 
-#importing modules
+# importing modules
 
-#convert text-to-speech
+# convert text-to-speech
 import pyttsx3
 
-###display current time
+# display current time
 import datetime
 
-### recognises speech
+# recognises speech
 import speech_recognition as sr
 
-###detect wekipidias
+# detect wekipidias
 import wikipedia
 
-###display web pages
+# display web pages
 import webbrowser
 
-###interact with os
+# interact with os
 import os
 
+# getting reference to pyttsx3.convert entered text to speech.
 engine=pyttsx3.init('sapi5')
+
+# pyttsx3 module support two voices i.e. 1st is of female and 2nd one is of male and it is supported by "sapi5"
 voices=engine.getProperty('voices')
 
-
+# selecting voice of female
 engine.setProperty('voice', voices[1].id)
 
 
